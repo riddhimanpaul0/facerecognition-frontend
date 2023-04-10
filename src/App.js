@@ -117,7 +117,7 @@ class App extends Component{
         .then(response => response.json())
         .then(calc => {
           if(this.state.user.id) {
-            fetch("http://localhost:3000/image", {
+            fetch("https://frozen-shore-57403.herokuapp.com/image", {
               method: 'put',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({
